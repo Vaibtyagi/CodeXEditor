@@ -1,0 +1,13 @@
+<article>
+    <app-search-bar></app-search-bar>
+    <section class="left_asidebar_section" *ngFor="let page of pages">
+        <a class="left_options" [routerLink]="['/documentation/', page?.alias]">
+            
+            <div class="section">
+                <span>
+                    {{page?.title}}
+                </span>
+            </div>
+        </a>
+    </section>
+</article>
